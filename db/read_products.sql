@@ -1,0 +1,2 @@
+-- we need to add a where statement so we don't get all the products. We'll want to use a parameter so we can dynamically select a product by product_id. We can use a where statement with the following syntax: WHERE column1 = value. Since we are looking for a product by ID, we'll change column1 to product_id. And since we are using a parameter for the ID, we'll change value to $1. The final syntax will look like:
+SELECT * FROM products WHERE product_id = $1;
